@@ -4,6 +4,7 @@
 //
 //  Created by Vilde Kolberg on 10.07.2017.
 //  Copyright © 2017 SverrirApps. All rights reserved.
+//  Smileyface?
 //
 
 import UIKit
