@@ -16,11 +16,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var text2: UITextField!
     
-    var tapCount = 0
-    
     @IBAction func buttonTapped(_ sender: AnyObject) {
         
-        theLabel.text = "The answer is: \(Double(text1.text!)! + Double(text2.text!)!)"
+        let addition = false
+        
+        if addition {
+            theLabel.text = "The answer is: \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            theLabel.text = "The answer is: \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     
     @IBAction func button2Tapped(_ sender: AnyObject) {
@@ -30,14 +34,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-    
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
